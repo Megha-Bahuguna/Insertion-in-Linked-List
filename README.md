@@ -89,12 +89,15 @@ void insertRandom(struct Node **head, int data, int pos)
 
 void display(struct Node *head)
 {
+
 	struct Node *m = head;
+	
 	while (m != NULL)
 	{
 		printf("%d\t", m->data);
 		m = m->next;
 	}
+	
 }
 
 int main()
