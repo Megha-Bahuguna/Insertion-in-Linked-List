@@ -25,9 +25,13 @@ int calcSize(struct Node *node)
 void insertStart(struct Node **head, int data)
 {
 	struct Node *p = (struct Node *)malloc(sizeof(struct Node));
+	
 	p->data = data;
+	
 	p->next = *head;
+	
 	*head = p;
+	
 }
 
 void insertLast(struct Node **head, int data)
